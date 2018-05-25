@@ -8,4 +8,4 @@ function debug($str) {
     echo '</pre>';
 }
 
-echo 'hello';
+echo 'hello world';
