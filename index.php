@@ -1,11 +1,11 @@
 <?php
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-function debug($str) {
-    echo '<pre>';
-    var_dump($str);
-    echo '</pre>';
-}
+include 'app/core/dev.php';
+include 'app/core/autoload.php';
 
-echo 'hello world';
+use app\core\Router;
+
+session_start();
+
+$router = new Router();
+$router->run();
