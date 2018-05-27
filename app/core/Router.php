@@ -70,24 +70,15 @@ class Router
 
                     $controller = new $path($this->params);
                     $controller->$action();
-
-                } else {
-
-                    echo 'не найден '.$action;
+                    exit;
 
                 }
 
-            } else {
-
-                echo 'не найден '.$path;
-
             }
 
-        } else {
-
-            echo 'маршрут не найден';
-
         }
+
+        View::errorCode(404);
 
     }
 

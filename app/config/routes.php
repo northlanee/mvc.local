@@ -4,8 +4,8 @@ return [
 
     '' => 'index/index',
 
-    'test' => 'test/test',
+    'login' => 'user/login',
 
-    'news' => 'test/show',
+    'register' => 'user/register',
 
 ];
