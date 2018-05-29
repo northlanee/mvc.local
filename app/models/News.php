@@ -4,7 +4,7 @@ namespace app\models;
 
 use app\core\Model;
 
-class Index extends Model
+class News extends Model
 {
 
     public function getAllNews() {
