@@ -9,6 +9,12 @@ class UserController extends MainController
 
     public function loginAction () {
 
+        if (!empty($_POST)) {
+
+            $this->view->jsRedirect('/');
+
+        }
+
         $this->view->render('Login');
 
     }

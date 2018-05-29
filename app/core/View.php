@@ -50,4 +50,16 @@ class View
 
     }
 
+    public function message($status, $message) {
+
+        exit(json_encode(['status' => $status, 'message' => $message]));
+
+    }
+
+    public function jsRedirect($url) {
+
+        exit(json_encode(['url' => $url]));
+
+    }
+
 }
