@@ -10,7 +10,7 @@ abstract class Controller
 
     public $route; // массив из названия контроллера и єкшна для доступа внутри любого из контроллеров
     public $view;
-    public $model = [];
+    public $model = [];//массив моделей
     public $acl;
 
     public function __construct($route)
